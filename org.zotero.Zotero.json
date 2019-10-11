@@ -1,8 +1,8 @@
 {
   "id": "org.zotero.Zotero",
-  "runtime": "org.gnome.Platform",
-  "runtime-version": "3.32",
-  "sdk": "org.gnome.Sdk",
+  "runtime": "org.freedesktop.Platform",
+  "runtime-version": "19.08",
+  "sdk": "org.freedesktop.Sdk",
   "command": "zotero",
   "rename-desktop-file": "zotero.desktop",
   "rename-icon": "zotero",
@@ -13,22 +13,23 @@
     "--filesystem=home"
   ],
   "modules": [
+    "shared-modules/dbus-glib/dbus-glib-0.110.json",
     {
       "name": "zotero",
       "buildsystem": "simple",
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.zotero.org/client/release/5.0.71/Zotero-5.0.71_linux-x86_64.tar.bz2",
-          "sha512": "afad119023d2b92f3ce567418e6e5e9cf350d5038d67662a2f27ca47c32021575c85cae61fbddc0a7569dcc3a7067fd1d6a3fee0fc658e45ba435b1a1a2711c8",
+          "url": "https://download.zotero.org/client/release/5.0.75/Zotero-5.0.75_linux-x86_64.tar.bz2",
+          "sha512": "807613e6fa54099011ae620e192f3a2af7375fa7896ccd75e35c1b0edf6f42ada6d3da4f723b0dfa0be7afc7b56da0c330ff62ced6ddcd8f3a06154786c55790",
           "only-arches": [
             "x86_64"
           ]
         },
         {
           "type": "archive",
-          "url": "https://download.zotero.org/client/release/5.0.71/Zotero-5.0.71_linux-i686.tar.bz2",
-          "sha512": "80614a09182112206bcac73c80a37f66ba309fb2a24ac81d1b4f985f0558ef691fa0b12cb7379b264d22db2494bc69b84a3b076e7ef67a78375660b8bef8b25e",
+          "url": "https://download.zotero.org/client/release/5.0.75/Zotero-5.0.75_linux-i686.tar.bz2",
+          "sha512": "21be03d616c8fb90409922b89f66ae29675fe5d1fde8ca677eaa51ea327fc852e32bdba4857ae58460a79cf8e8deb80e936875c8f3559e328f158f2601d47422",
           "only-arches": [
             "i386"
           ]
